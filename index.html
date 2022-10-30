@@ -1,69 +1,84 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="https://unicons.iconscout.com/release/v4.0.0/css/line.css">
+  <link rel="stylesheet" href="https://unicons.iconscout.com/release/v4.0.0/css/solid.css">
   <link rel="stylesheet" href="./styles/index.css">
   <title>Wallethub</title>
 </head>
+
 <body>
   <header></header>
 
   <nav>
     <ul>
       <li>
-        <a href="#">Navigation Link One</a>
+        <a class="link-one" href="#">Navigation Link One</a>
       </li>
       <li>
-        <a href="#">Navigation Link Two</a>
+        <a class="link-two" href="#">Navigation Link Two</a>
       </li>
       <li>
-        <a href="#">Navigation Link Three</a>
+        <a class="link-three" href="#">Navigation Link Three</a>
       </li>
     </ul>
   </nav>
 
-  <section>
-    Do the right thing.
+  <section class='hero-banner'>
+    <h2>Do the right thing.</h2>
+
+    <section class="banner-image"></section>
   </section>
 
-  <section>
-    <h4>Credit Opportunities With Good Approval Odds †</h4>
+  <section class='container-section'>
+    <h4 class='container-title'>Credit Opportunities With Good Approval Odds †</h4>
 
-    <article>
-      <section>
+    <article class='credit-card'>
+      <section class="card-header">
         <h6>Barclay card CashForwardTM World MasterCardTM</h6>
 
         <section>
-          <i>stars</i>
+          <i class="uis uis-favorite"></i>
+          <i class="uis uis-favorite"></i>
+          <i class="uis uis-favorite"></i>
+          <i class="uis uis-favorite"></i>
+          <i class="uil uil-favorite"></i>
           <p>3,252 Reviews</p>
         </section>
       </section>
 
-      <section>
-        <img src="#" alt="card-image">
+      <section class="card-wrapper">
+        <section class="card-image">
+          <img src="./assets/svgs/card.svg" alt="card-image">
 
-        <section>
-          <h6>Approval Odds †</h6>
-          <section>Very Good</section>
+          <section>
+            <h6>Approval Odds †</h6>
+            <section>Very Good</section>
+          </section>
+        </section>
+
+
+        <section class="card-content">
+          <ul>
+            <li>Get a $100 cash rewards bonus after you spend $500 in purchases in the first 90 days after account
+              opening.</li>
+            <li>Earn unlimited 1.5% cash rewards on every purchase.</li>
+            <li>Earn unlimited 1.5% cash rewards on every...<a href="#">show more</a></li>
+          </ul>
         </section>
       </section>
 
-      <section>
-        <ul>
-          <li>Get a $100 cash rewards bonus after you spend $500 in purchases in the first 90 days after account opening.</li>
-          <li>Earn unlimited 1.5% cash rewards on every purchase.</li>
-          <li>Earn unlimited 1.5% cash rewards on every...<a href="#">show more</a></li>
-        </ul>
-      </section>
-
-      <button>Apply Now</button>
+      <button class="card-button"><span>Apply Now</span></button>
 
       <hr>
-      
-      <p><a href="#">See Details Rates & Fees</a></p>
+
+      <p class="card-footer-text"><a href="#">See Details Rates & Fees</a></p>
     </article>
   </section>
 </body>
+
 </html>

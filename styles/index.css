@@ -1,0 +1,332 @@
+@font-face {
+  font-family: normalFont;
+  src: url('../assets/fonts/ProximaNova-Reg.otf');
+}
+
+@font-face {
+  font-family: boldFont;
+  src: url('../assets/fonts/ProximaNova-Bold.otf');
+}
+
+* {
+  padding: 0;
+  margin: 0;
+}
+
+body {
+  padding: 0;
+  margin: 0;
+  font-family: normalFont;
+  background-color: #f1f5f8;
+}
+
+header {
+  width: 100%;
+  height: 55px;
+  background-color: #23123a;
+}
+
+nav {
+  background-color: #fff;
+}
+
+nav ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: space-between;
+  font-size: 16px;
+  color: #000000;
+  font-family: boldFont;
+  text-align: center;
+  height: 45px;
+}
+
+nav ul li {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  flex: 1;
+  justify-content: center;
+}
+
+nav ul li:nth-child(2) {
+  border-left: 1px solid #edeff0;
+  border-right: 1px solid #edeff0;
+}
+
+nav ul li a {
+  font-size: 16px;
+  color: #000000;
+  font-family: boldFont;
+  text-align: center;
+  text-decoration: none;
+}
+
+.hero-banner {
+  position: relative;
+  width: 100%;
+  height: 532px;
+  background-color: #23123a;
+}
+
+.banner-image {
+  width: 100%;
+  height: 532px;
+  background-image: url('../assets/images/images_hero.png');
+  background-size: 100% 532px;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+.hero-banner h2 {
+  font-size: 102px;
+  color: #ffffff;
+  font-family: boldFont;
+  padding: 32px 48px;
+}
+
+.container-section {
+  padding: 48px;
+}
+
+.container-title {
+  font-size: 30px;
+  color: #373737;
+  font-family: boldFont;
+  margin: 0;
+  margin-bottom: 24px;
+}
+
+.credit-card {
+  background-color: #ffffff;
+  padding: 24px 48px;
+}
+
+.card-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.card-header>h6 {
+  font-size: 20px;
+  line-height: 20px;
+  color: #373737;
+}
+
+.card-header>section {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 16px;
+}
+
+.card-header>section>p {
+  font-size: 15px;
+  line-height: 20px;
+  color: #000000;
+  margin-left: 8px;
+}
+
+.card-header>section>i {
+  color: #59d8d1;
+}
+
+.card-image {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex: 1;
+  width: 100%;
+}
+
+.card-wrapper {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 16px 0;
+}
+
+.card-image>img {
+  height: 100px;
+}
+
+.card-image>section {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.card-image>section>h6 {
+  font-size: 15px;
+  line-height: 20px;
+  color: #000000;
+  text-align: center;
+}
+
+.card-image>section>section {
+  border-radius: 15px;
+  background-color: #59d8d1;
+  font-size: 15px;
+  line-height: 24px;
+  color: #ffffff;
+  font-family: boldFont;
+  padding: 3px 10px;
+  margin-top: 12px;
+}
+
+.card-content {
+  flex: 2;
+  margin-left: 32px;
+}
+
+.card-content ul {
+  font-size: 18px;
+  line-height: 20px;
+  color: #000000;
+}
+
+.card-content li {
+  margin: 8px 0;
+}
+
+.card-content li a {
+  text-decoration: none;
+  color: #1194f6
+}
+
+.card-button {
+  width: 272px;
+  height: 40px;
+  border-radius: 5px;
+  background-color: #fa6e3d;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 15px;
+  line-height: 24px;
+  color: #ffffff;
+  font-family: boldFont;
+  border: none;
+  outline: none;
+  margin-bottom: 32px;
+  cursor: pointer;
+}
+
+.card-button:focus {
+  animation: button .5s;
+}
+
+.card-button:active {
+  animation: none;
+}
+
+.card-footer-text {
+  font-size: 18px;
+  line-height: 34px;
+  margin-top: 16px;
+}
+
+.card-footer-text a {
+  text-decoration: none;
+  color: #1194f6;
+}
+
+@keyframes button {
+  0% {
+    transform: scale(1);
+  }
+
+  50% {
+    transform: scale(1.02);
+  }
+
+  100% {
+    transform: scale(1);
+  }
+}
+
+
+@media screen and (max-width: 500px) {
+  .hero-banner {
+    height: 411px;
+  }
+
+  .banner-image {
+    width: 100%;
+    position: absolute;
+    background-image: url(../assets/images/hero-mobile.png);
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+    height: 50%;
+    top: 50%;
+  }
+
+  .hero-banner h2 {
+    font-size: 54px;
+    padding: 32px 24px;
+  }
+
+  nav ul li a {
+    font-size: 15px;
+    color: #000000;
+  }
+
+  .container-section {
+    padding: 0;
+    padding-top: 32px;
+  }
+
+  .container-title {
+    font-size: 18px;
+    margin-left: 24px;
+  }
+
+  .card-header>section {
+    display: none;
+  }
+
+  .card-image {
+    margin-bottom: 16px;
+  }
+
+  .card-wrapper {
+    flex-direction: column;
+  }
+
+  .card-content {
+    flex: 2;
+    margin-left: 0;
+  }
+
+  .card-button {
+    width: 100%;
+  }
+
+  nav ul li a {
+    visibility: hidden;
+    line-height: 0;
+  }
+
+  nav ul li a::after {
+    visibility: initial;
+    display: flex;
+    justify-content: center;
+  }
+
+  .link-one:after {
+    content: 'Link One';
+  }
+
+  .link-two:after {
+    content: 'Link Two';
+  }
+
+  .link-three:after {
+    content: 'Link Three';
+  }
+}
